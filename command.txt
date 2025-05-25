@@ -1,0 +1,1 @@
+g++ main.cpp program1.cpp program2.cpp program3.cpp -o main
