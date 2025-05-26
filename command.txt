@@ -1,1 +1,1 @@
-g++ main.cpp program1.cpp program2.cpp program3.cpp -o main
+g++ main.cpp program1.cpp program2.cpp program3.cpp program4.cpp -o main
