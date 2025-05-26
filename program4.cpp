@@ -4,10 +4,10 @@
 using namespace std;
 
 void program4() {
-    cout << endl << "--- Демонстрация работы с отображением (std::map) ---" << endl;
+    cout << endl << "--- ПРИЛОЖЕНИЕ 4 ---" << endl;
     map<string, int> phonebook;
 
-    cout << "Добавление элементов (insert, operator[]):" << endl;
+    cout << "Добавление элементов:" << endl;
     phonebook["Карпов"] = 12345;
     phonebook["Усенко"] = 23456;
     phonebook.insert({"Горохова", 34567});
@@ -15,7 +15,7 @@ void program4() {
     phonebook["Гудов"] = 56789;
     phonebook["Боянов"] = 67890;
 
-    cout << endl << "Доступ к элементу по ключу (operator[]):" << endl;
+    cout << endl << "Доступ к элементу по ключу:" << endl;
     cout << "Телефон Усенко: " << phonebook["Усенко"] << endl;
 
     cout << endl << "Поиск элемента (find):" << endl;
@@ -25,7 +25,7 @@ void program4() {
     else
         cout << "Горохова не найдена" << endl;
 
-    cout << endl << "Проверка наличия ключа (count):" << endl;
+    cout << endl << "Проверка наличия ключа:" << endl;
     cout << "Есть ли Костенко? " << (phonebook.count("Костенко") ? "Да" : "Нет") << endl;
     cout << "Есть ли Иванов? " << (phonebook.count("Иванов") ? "Да" : "Нет") << endl;
 
@@ -33,10 +33,10 @@ void program4() {
     phonebook.erase("Гудов");
     cout << "Телефон Гудова удалён." << endl;
 
-    cout << endl << "Размер map (size): " << phonebook.size() << endl;
-    cout << "Пустой ли map (empty): " << (phonebook.empty() ? "Да" : "Нет") << endl;
+    cout << endl << "Размер map: " << phonebook.size() << endl;
+    cout << "Пустой ли map: " << (phonebook.empty() ? "Да" : "Нет") << endl;
 
-    cout << endl << "Очистка map (clear):" << endl;
+    cout << endl << "Очистка map:" << endl;
     phonebook.clear();
     cout << "Пустой ли map после clear: " << (phonebook.empty() ? "Да" : "Нет") << endl;
 } 
